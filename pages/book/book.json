@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择位置",
+  "usingComponents": {
+    "general-seat-head":"../../components/general-seat-head/general-seat-head"
+  }
+}

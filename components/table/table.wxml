@@ -1,0 +1,4 @@
+<view class="table-contain" style="transform: rotate({{direction}});">
+  <general-seat title="{{title}}" backColor="{{backColor}}" titleColor="{{titleColor}}"></general-seat>
+  <view class="table"></view>
+</view>

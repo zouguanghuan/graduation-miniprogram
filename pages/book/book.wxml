@@ -1,0 +1,11 @@
+<view class="book-contain">
+  <general-seat-head></general-seat-head>
+  <view class="headTip">{{headTip}}</view>
+  <view class="book-body">
+    <general-seat-list room_id="{{room_id}}" seatList="{{seatList}}" bindmyevent="setSelectedIndex"></general-seat-list>
+  </view>
+  <view class="footer-btn">
+    <van-button catchtap="judge" type="primary">{{btn_text}}</van-button>
+  </view>
+</view>
+<van-toast id="van-toast" />

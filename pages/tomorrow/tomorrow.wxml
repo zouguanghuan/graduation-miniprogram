@@ -1,0 +1,48 @@
+<view class="tomorrow-contain">
+  <view class="tomorrow-swiper">
+    <swiper indicator-dots="{{true}}" indicator-color="{{'#fff'}}" autoplay="{{true}}" interval="{{2000}}"
+      duration="{{500}}">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <cover-image  src="{{item}}"></cover-image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="tomorrow-general-book">
+    <view class="tomorrow-general-title">座位预定</view>
+    <view class="tomorrow-general-btn">
+      <view class="btn">
+      <van-button color="{{setcolor1}}">{{general_btn1}}</van-button>
+      <van-button color="{{setcolor2}}">{{general_btn2}}</van-button>
+      </view>
+      <view class="setting">
+        <van-icon name="setting" color="#71a1ea" size="80rpx"></van-icon>
+      </view>
+    </view>
+  </view>
+
+  <view class="tomorrow-diy">
+    <view class='page_row' bindtap="suo">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class=""  placeholder="请输入教室名" model:value="{{inputValue}}"/>  
+        </view>  
+      </view>  
+      <van-button catchtap="submit" class='sousuo'>搜索</van-button>  
+    </view>  
+  </view>
+
+  <view class="home-seat-list">
+    <view class="home-library">西区图书馆</view>
+    <view class="home-seat-content">
+      <view class="left">
+        <view class="seat-room">2楼大厅（2楼）</view>
+        <!-- <view class="seat-book-tip">8：00~22：00可在开馆时提前2.50个小时预定</view> -->
+      </view>
+      <view catchtap="toBook" class="right">145/180</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="general-seat-list">
+  <table catchtap="selected" wx:for="{{seatList}}" title="{{item.seat_no}}"
+  status="{{item.status}}"
+   mark:seatInfo="{{item}}" mark:index="{{index}}"  wx:key="seat_id">
+  </table>
+</view>

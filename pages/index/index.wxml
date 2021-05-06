@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="index-container">
+  <view class="index-head-img">
+    <swiper indicator-dots="{{true}}" indicator-color="{{'#fff'}}" autoplay="{{true}}" interval="{{2000}}"
+      duration="{{500}}">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <image mode="heightFix" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="know-east">
+    <text>认识东华理工大学</text>
+    <image mode="heightFix" src="https://static-data.eol.cn//upload/svideo/piliang_176_thumb.jpg">
+    </image>
+    <image catchtap="changePlayBtn" class="play_icon" mode="heightFix" src="../../public/image/l-play.png">
+    </image>
+  </view>
+  <view class="index-text">
+    <view class="content" catchtap="submit">
+      进入图书馆
+    </view>
+  </view>
+  <view class="east-video" style="display: {{playBtn ? 'block' : 'none'}}">
+    <view catchtap="changePlayBtn" class="close-btn">
+      x
+    </view>
+    <video id="myVideo"
+      src="https://1252645828.vod2.myqcloud.com/99deab72vodtransgzp1252645828/46e8c71a5285890783384582790/v.f30.mp4"
+      binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu="{{false}}" danmu-btn="{{false}}" show-center-play-btn='{{true}}'
+      show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+      show-fullscreen-btn="{{false}}"
+      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'></video>
+  </view>
+</view>

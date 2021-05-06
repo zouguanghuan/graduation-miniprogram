@@ -1,0 +1,45 @@
+<view class="home-contain">
+  <view class="home-swiper">
+    <swiper indicator-dots="{{true}}" indicator-color="{{'#fff'}}" autoplay="{{true}}" interval="{{2000}}"
+      duration="{{500}}">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <cover-image  src="{{item}}"></cover-image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="home-grid">
+    <van-grid column-num="2" border clickable>
+  <van-grid-item catchtap="toTomorrow" icon="photo-o" text="明日预约" />
+  <van-grid-item catchtap="toSupervise" icon="photo-o" text="监督占座" />
+  <van-grid-item catchtap="toRecord" icon="photo-o" text="预约记录" />
+  <van-grid-item catchtap="toBreakRule" icon="photo-o" text="违规记录" />
+    </van-grid>
+  </view>
+
+  <view class="home-general-book">
+    <view class="home-general-title">座位预定</view>
+    <view class="home-general-btn">
+      <view class="btn">
+      <van-button catchtap="toGen1" color="{{setcolor1}}">{{general_btn1}}</van-button>
+      <van-button catchtap="toGen2" color="{{setcolor2}}">{{general_btn2}}</van-button>
+      </view>
+      <view catchtap="toSetting" class="setting">
+        <van-icon name="setting" color="#71a1ea" size="80rpx"></van-icon>
+      </view>
+    </view>
+  </view>
+
+  <view class="home-seat-list" wx:for="{{room_list}}" wx:key="room_id">
+    <view class="home-library">{{item.name}}</view>
+    <view mark:room_id="{{item.room_id}}" catchtap="toBookSeat" class="home-seat-content">
+      <view class="left">
+        <view class="seat-room">{{item.room_name}}</view>
+        <view class="seat-book-tip">8：00~22：00可在开馆时提前2.50个小时预定</view>
+      </view>
+      <view class="right">{{item.seat_surplus}}/{{item.seat_num}}</view>
+    </view>
+  </view>
+</view>

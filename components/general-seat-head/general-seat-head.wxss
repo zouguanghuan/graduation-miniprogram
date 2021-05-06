@@ -1,0 +1,6 @@
+.general-seat-head {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,30 @@
+.rule-title {
+  padding-left: 10rpx;
+}
+
+.rule-content {
+  padding: 20rpx 10rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.rule-content .left {
+  width: 30%;
+}
+
+.rule-content .right {
+  width: 70%;
+  padding-left: 40rpx;
+}
+.rule-content .right view {
+  padding: 10rpx 0;
+  color: #999;
+}
+
+.rule-table .rule-table-head .van-row .van-col {
+  color: #000;
+}
+.rule-table .van-row  .van-col{
+  padding: 10rpx;
+  color: #999;
+  text-align: center;
+}

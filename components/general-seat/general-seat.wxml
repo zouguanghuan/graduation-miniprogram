@@ -1,0 +1,6 @@
+<view class="general-seat">
+  <view class="seat" style="background-color: {{backColor}}; color:{{titleColor}}">
+    {{title}}
+  </view>
+  <view class="text">{{text}}</view>
+</view>

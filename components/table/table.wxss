@@ -1,0 +1,10 @@
+.table-contain{
+  min-width: 50rpx;
+  position: relative;
+}
+.table {
+  min-width: 50rpx;
+  min-height: 50rpx;
+  margin-bottom: 10rpx; 
+  background-color: #a9bdd6;
+}

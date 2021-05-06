@@ -1,0 +1,8 @@
+<view class="general-seat-head">
+  <general-seat backColor="#5c85bd" text="出入口"></general-seat>
+  <general-seat backColor="#dd8383" text="有人"></general-seat>
+  <general-seat backColor="#c3c7d3" text="损坏"></general-seat>
+  <general-seat backColor="#ff9908" text="监督"></general-seat>
+  <general-seat backColor="#b4d9fc" text="我的选择"></general-seat>
+  <general-seat backColor="#ffffff" text="空闲"></general-seat>
+</view>

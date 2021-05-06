@@ -1,0 +1,12 @@
+.general-seat-list {
+  width: 600rpx;
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50rpx 30rpx;
+  background-color: #dee6f3;
+}
+table {
+  margin: 20rpx;
+}

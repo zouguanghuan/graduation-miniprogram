@@ -1,0 +1,25 @@
+.general-seat {
+  background-color: #e0e0e0;
+  min-width: 50rpx;
+  min-height: 50rpx;
+  display: inline-block;
+  position: relative;
+}
+
+.seat {
+  background-color: #fff;
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 55rpx;
+}
+
+.text {
+  width: 100%;
+  padding-top: 50rpx;
+  line-height: 50rpx;
+}

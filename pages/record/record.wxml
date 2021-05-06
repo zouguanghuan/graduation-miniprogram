@@ -1,0 +1,20 @@
+<view class="record-swiper">
+    <swiper indicator-dots="{{true}}" indicator-color="{{'#fff'}}" autoplay="{{true}}" interval="{{2000}}"
+      duration="{{500}}">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <cover-image  src="{{item}}"></cover-image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="home-seat-list">
+    <view class="home-library">西区图书馆</view>
+    <view class="home-seat-content">
+      <view class="left">
+        <view class="seat-room">2楼大厅（2楼）</view>
+      </view>
+      <view class="right">12号</view>
+    </view>
+  </view>

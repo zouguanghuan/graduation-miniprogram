@@ -1,0 +1,3 @@
+<van-button color="{{color}}" >
+  通用
+</van-button>

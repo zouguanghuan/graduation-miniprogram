@@ -1,0 +1,16 @@
+<van-picker 
+show-toolbar
+  columns="{{ columns }}"
+  bind:change="onChange"
+  title="常用自习室1" 
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"/>
+<van-picker 
+show-toolbar
+  columns="{{ columns }}"
+  bind:change="onChange"
+  title="常用自习室2" 
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"/>
+
+  <van-toast id="van-toast" />

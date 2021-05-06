@@ -1,0 +1,67 @@
+{
+  "usingComponents": {
+    "table": "/components/table/table",
+    "auth-button": "/components/auth-button/auth-button",
+    "general-seat": "/components/general-seat/general-seat",
+    "general-seat-list": "/components/general-seat-list/general-seat-list",
+    "van-button": "/@vant/weapp/dist/button/index",
+    "van-cell-group": "/@vant/weapp/dist/cell-group/index",
+    "van-field": "/@vant/weapp/dist/field/index",
+    "van-grid": "/@vant/weapp/dist/grid",
+    "van-grid-item": "/@vant/weapp/dist/grid-item",
+    "van-icon": "/@vant/weapp/dist/icon",
+    "van-row": "/@vant/weapp/dist/row",
+    "van-col": "/@vant/weapp/dist/col",
+    "van-notify": "/@vant/weapp/dist/notify", 
+    "van-toast": "/@vant/weapp/dist/toast",
+    "van-tree-select": "/@vant/weapp/dist/tree-select",
+    "van-picker": "/@vant/weapp/dist/picker"
+  },
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/break-rule/break-rule",
+    "pages/record/record",
+    "pages/tomorrow/tomorrow",
+    "pages/supervise/supervise",
+    "pages/book/book",
+    "pages/forget/forget",
+    "pages/login/login",
+    "pages/rule/rule",
+    "pages/user/user" ,
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "图书馆座位预定",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#e69c9c",
+    "selectedColor": "#71d4cb",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "public/icon_qmjczy8glh/index.png",
+        "selectedIconPath": "public/icon_qmjczy8glh/index_1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "public/icon_qmjczy8glh/jiankong.png",
+        "selectedIconPath": "public/icon_qmjczy8glh/jiankong_1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "public/icon_qmjczy8glh/wode.png",
+        "selectedIconPath": "public/icon_qmjczy8glh/wode_1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

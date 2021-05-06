@@ -1,0 +1,30 @@
+<view class="forget-contain">
+  <!-- <form>
+    <input value="" placeholder="输入账号" type="text" name="name"></input>
+    <input value="" placeholder="输入新密码" type="text" password name="password"></input>
+  </form> -->
+  <form bindsubmit="submit">
+    <view class='buttonarea'>
+      <view class='button'>
+        <van-cell-group>
+          <van-field bindinput="inputHandle" data-name="inputName" name="name" clearable label="用户名" left-icon="smile-o" placeholder="请输入用户名"
+            bind:click-icon="onClickIcon" bind:input="name" />
+          <van-field name="password" password="{{switch_psw}}" label="密码" left-icon="eye-o" icon="closed-eye"
+            placeholder="请输入密码" border="{{ false }}" bind:input="password" bind:click-icon="swtich_p" />
+          <view class="verify">
+            <van-field name="sms" bindInput="inputSmsHandle" data-name="inputSms" center clearable label="短信验证码" placeholder="请输入短信验证码" border="{{ false }}"
+              use-button-slot>
+              <van-button catchtap="sendSms" slot="button" size="small" type="primary">
+                发送验证码
+              </van-button>
+            </van-field>
+          </view>
+        </van-cell-group>
+      </view>
+      <view class='button'>
+        <button class="b2" form-type='submit'>确定</button>
+      </view>
+    </view>
+  </form>
+  <van-toast id="van-toast" />
+</view>

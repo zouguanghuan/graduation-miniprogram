@@ -1,0 +1,93 @@
+<view class="rule-contain">
+  <view class="rule-title">东华理工大学使用规则</view>
+  <view class="rule-content">
+    <view class="left">
+      当前状态
+    </view>
+    <view class="right">
+      正常使用中
+    </view>
+  </view>
+
+  <view class="rule-content">
+    <view class="left">
+      用馆规则
+    </view>
+    <view class="right">
+      <view>来馆选座、到馆签到、离馆退座，临时离开请点击暂离。</view>
+      <view>系统开闭时间见对应馆室名下方小字。</view>
+    </view>
+  </view>
+
+  <view class="rule-content">
+    <view class="left">
+      明日预约规则
+    </view>
+    <view class="right">
+      <view>可在22:00点-23:00预约次日开馆座位</view>
+    </view>
+  </view>
+
+  <view class="rule-content">
+    <view class="left">
+      违规规则
+    </view>
+    <view class="right">
+      <view> 预约后规定时间内未到馆签到记录违规；</view>
+      <view>被监督占座不签到记录违规；</view>
+      <view>离馆不退座记录违规。</view>
+    </view>
+  </view>
+
+  <view class="rule-content">
+    <view class="left">
+      黑名单规则
+    </view>
+    <view class="right">
+      <view>1. 15天内发生3次违规进入黑名单，黑名单禁用系统7天。</view>
+      <view>2. “黑名单解除”道具使用后立即移除黑名单，进入黑名单后清除违规记录不会移除黑名单。</view>
+      <view>3. 违规使用监督占座功能的（如照片严重失实），查证后立即进入长期黑名单且不可使用道具移除。</view>
+      <view>4. 已开通学号验证的学校,如果绑定他人学号或者借学号给他人绑定,查证后立即进入长期黑名单且不可使用道具移除。</view>
+    </view>
+  </view>
+
+  <view class="rule-content">
+    <view class="left">
+      退座位规则
+    </view>
+    <view class="right">
+      <view>1. 退座分为主动退座及被动退座。</view>
+      <view>主动退座:自己主动点击退座按钮根据页面指示进行退座</view>
+      <view>3. 被动退座:闭馆时系统会自动清理座位，只记录1/4的时长及积分，不会被记录违规。</view>
+    </view>
+  </view>
+
+  <view class="rule-table">
+    <view class="rule-table-head">
+    <van-row>
+      <van-col span="8">暂离保留规则</van-col>
+      <van-col span="5">时长</van-col>
+      <van-col span="8">可用时间</van-col>
+      <van-col span="3">次数</van-col>
+    </van-row>
+  </view>
+    <van-row>
+      <van-col span="8">暂离保留</van-col>
+      <van-col span="5">30分钟</van-col>
+      <van-col span="8">07:00-22:00</van-col>
+      <van-col span="3">5次</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="8">午间暂留</van-col>
+      <van-col span="5">120分钟</van-col>
+      <van-col span="8">11:00-13:00</van-col>
+      <van-col span="3">1次</van-col>
+    </van-row>
+    <van-row>
+      <van-col span="8">晚间暂留</van-col>
+      <van-col span="5">120分钟</van-col>
+      <van-col span="8">17:00-19:00</van-col>
+      <van-col span="3">1次</van-col>
+    </van-row>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+.button {
+  margin-top: 20rpx;
+}
+.verify {
+  display: flex;
+}
+.van-button--small {
+  width: 220rpx!important;
+}

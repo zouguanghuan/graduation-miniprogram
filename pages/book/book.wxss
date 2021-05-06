@@ -1,0 +1,22 @@
+.headTip {
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 40rpx;
+  color: #ecb23d;
+}
+
+.book-body {
+  height: 850rpx;
+  overflow: auto;
+}
+
+.footer-btn {
+  position: fixed;
+  bottom: 18rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-btn .van-button {
+  width: 250rpx;
+}

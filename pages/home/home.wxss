@@ -1,0 +1,37 @@
+.home-contain .home-swiper .image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home-general-book .home-general-title {
+  margin-top: 30rpx;
+  padding-left: 70rpx;
+}
+.home-general-book .home-general-btn {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-general-book .home-general-btn view .van-button {
+  width: auto;
+  margin-right: 10rpx;
+}
+
+.home-seat-list {
+  margin-top: 50rpx;
+}
+.home-seat-list .home-seat-content {
+  display: flex;
+  justify-content: space-between;
+}
+.home-library {
+  margin-bottom: 20rpx;
+}
+.left {
+  font-size: 26rpx;
+  color:#2b2b2b;
+}
+.right {
+  color: #71a1ea;
+}
